@@ -2,4 +2,21 @@
 h1 {
   color: gold;
   font-family: "robotino", sans-serif;
+  background-color: rgb(200, 255, 0);
+}
+
+.retour1 {
+  color: brown;
+}
+
+.retour2 {
+  color: rgba(0, 255, 21, 0.904);
+}
+
+.retour3 {
+  color: rgb(255, 0, 106);
+}
+
+.retour4 {
+  color: rgb(228, 184, 190);
 }/*# sourceMappingURL=style.css.map */
