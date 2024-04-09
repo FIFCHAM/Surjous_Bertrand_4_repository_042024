@@ -1,15 +1,20 @@
+@mixin header-flex-title{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 63px;
+}
 @mixin ohmyfood-mobile{
-    font-family:"shrikhand";
+font-family:"shrikhand";
 font-size: 30px;
 font-weight: 400;
 line-height: 43.74px;
 text-align: center;
 }
 @mixin location{
-font-family: Roboto;
+font-family: 'Roboto';
 font-size: 16px;
 font-weight: 500;
-line-height: 18.75px;
 text-align: left;
 
 }
