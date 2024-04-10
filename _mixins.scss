@@ -32,16 +32,25 @@ font-family: 'Roboto';
 font-size: 24px;
 font-weight: 700;
 line-height: 28.13px;
-text-align: left;
+text-align: center;
 }
 
 @mixin choix-title{
 font-family: 'Roboto';
-font-size: 16px;
+font-size: 18px;
 font-weight: 300;
-line-height: 18.75px;
-text-align: left;
+line-height: 21.09px;
+text-align: center;
 }
+@mixin button{
+font-family:'Roboto';
+font-size: 16px;
+font-weight: 500;
+line-height: 18.75px;
+text-align: center;
+
+}
+
 
 @mixin plat-name{
 font-family: 'Roboto';

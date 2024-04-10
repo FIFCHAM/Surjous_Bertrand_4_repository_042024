@@ -14,6 +14,14 @@ a {
   text-decoration: none;
 }
 
+button {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border: none;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -54,4 +62,39 @@ a {
   font-weight: 500;
   text-align: left;
   color: #353535;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.reservation .section-title {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: center;
+  margin: 40px 40px 15px;
+  color: #101010;
+}
+.reservation p {
+  color: #353535;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  text-align: center;
+}
+.reservation button {
+  width: 218px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
