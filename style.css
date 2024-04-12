@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
 }
 
 a {
@@ -15,11 +15,37 @@ a {
 }
 
 button {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border: none;
   color: #ffffff;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 0px 30px 0px 30px;
+}
+
+button:hover {
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  border: none;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  padding: 0px 30px 0px 30px;
 }
 
 .header {
@@ -49,7 +75,7 @@ button {
   gap: 17px;
   width: 100%;
   height: 50px;
-  background: #EAEAEA;
+  background: #eaeaea;
   box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.2509803922);
 }
 .header .location-container i {
@@ -87,14 +113,58 @@ button {
   line-height: 21.09px;
   text-align: center;
 }
-.reservation button {
-  width: 218px;
-  height: 50px;
-  margin-top: 30px;
-  margin-bottom: 50px;
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 20px 50px 20px;
+}
+.fonctionnement .section-title {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: center;
+  color: #101010;
+}
+.fonctionnement .choisissez {
+  position: relative;
+  display: flex;
+  background: #F6F6F6;
+  border-radius: 20px;
+  height: 72.38px;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+.fonctionnement .phone-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.fonctionnement .phone-group i {
+  width: 13.02px;
+  height: 19.9px;
+}
+.fonctionnement .phone-group p {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
+  text-align: left;
+  color: #101010;
+}
+.fonctionnement .number-radius {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #9356DC;
+  height: 30px;
+  width: 30px;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
