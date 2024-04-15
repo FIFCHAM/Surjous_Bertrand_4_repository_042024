@@ -32,7 +32,6 @@ font-family: 'Roboto';
 font-size: 24px;
 font-weight: 700;
 line-height: 28.13px;
-text-align: center;
 }
 
 @mixin choix-title{
@@ -82,5 +81,29 @@ font-size: 16px;
 font-weight: 500;
 line-height: 18.75px;
 text-align: left;
+
+}
+@mixin function-number{
+font-family: 'Roboto';
+font-size: 14.18px;
+font-weight: 500;
+line-height: 16.62px;
+text-align: left;
+
+}
+@mixin card-title{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.09px;
+text-align: left;
+
+}
+@mixin btn-new{
+    font-family: 'Roboto';
+font-size: 14px;
+font-weight: 500;
+line-height: 16.41px;
+text-align: center;
 
 }
