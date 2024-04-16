@@ -92,7 +92,7 @@ text-align: left;
 
 }
 @mixin card-title{
-    font-family: Roboto;
+    font-family: 'Roboto';
 font-size: 18px;
 font-weight: 700;
 line-height: 21.09px;
@@ -106,11 +106,37 @@ font-weight: 500;
 line-height: 16.41px;
 text-align: center;
 
-}@mixin localité-text{
+}
+@mixin localité-text{
 font-family: 'Roboto';
 font-size: 17px;
 font-weight: 300;
 line-height: 19.92px;
+text-align: left;
+
+}
+@mixin logo-footer{
+    font-family: 'Shrikhand';
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+line-height: 26.24px;
+text-align: left;
+
+}
+@mixin icon-footer{
+    font-family: 'Roboto';
+font-size: 16px;
+font-weight: 500;
+line-height: 18.75px;
+text-align: left;
+
+}
+@mixin text-footer{
+    font-family:'Roboto';
+font-size: 16px;
+font-weight: 400;
+line-height: 18.75px;
 text-align: left;
 
 }
