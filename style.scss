@@ -149,7 +149,7 @@ a {
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background-color: #9356DC;
+        background-color:$background-heart-number;
         height: 24px;
         width: 24px;
         text-align: center;
@@ -162,12 +162,11 @@ a {
 .restaurant-container{
   display: flex;
   flex-direction: column;
-  margin: 80px 0px 80px 0px;
+  margin: 75px 0px 80px 0px;
   background-color: #F6F6F6;
 
   .section-title{
     @include section-title;
-    margin-bottom: 50px;
     margin-top: 50px;
     margin-left: 20px;
 
@@ -201,7 +200,7 @@ a {
 
   img{
     width: 100%;
-    height: 200px;
+    height: 180px;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
     margin: 0;
@@ -210,21 +209,39 @@ a {
   .card-title{
     @include card-title;
     color:$fond-black;
+    margin-left: 15px;
   }
   .card-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     position: relative;
-    height: 50px;
+    height: 70px;
+    gap: 5px;
   }
-  .card-title {
-    margin-left: 15px;
-  }
+  
   .card-text{
     margin-left: 15px;
+    @include localité-text;
+    color: $fond-black;
   }
   .card-description i{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 40px;
+    font-size: 25px;
+    
+  }
+  .card-description i:hover{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 25px;
+    font-weight: 900;
+    color:linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+
+
   }
 
 }

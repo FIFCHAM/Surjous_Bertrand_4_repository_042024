@@ -100,10 +100,17 @@ text-align: left;
 
 }
 @mixin btn-new{
-    font-family: 'Roboto';
+font-family: 'Roboto';
 font-size: 14px;
 font-weight: 500;
 line-height: 16.41px;
 text-align: center;
+
+}@mixin localité-text{
+font-family: 'Roboto';
+font-size: 17px;
+font-weight: 300;
+line-height: 19.92px;
+text-align: left;
 
 }
