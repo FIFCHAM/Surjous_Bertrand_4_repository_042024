@@ -17,7 +17,6 @@
 }
 body {
   margin: 0;
-  background-color: #ffffff;
 }
 a {
   text-decoration: none;
@@ -32,7 +31,7 @@ a {
   color: #ffffff;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px #00000040;
-  padding: 0px 30px 0px 30px;
+  padding: 15px 30px 0px 30px;
 }
 .reservation-btn:hover {
   height: 50px;
@@ -45,7 +44,11 @@ a {
   color: #ffffff;
   border-radius: 25px;
   box-shadow: 0px 4px 15px 0px #00000059;
-  padding: 0px 30px 0px 30px;
+  padding: 15px 30px 0px 30px;
+}
+.main-container{
+  margin: 0;
+  background-color: #ffffff;
 }
 
 //************************ Header*************************************
@@ -58,6 +61,7 @@ a {
   .header-title {
     @include header-flex-title;
   }
+  
   .header-title p {
     @include ohmyfood-mobile;
     color: $fond-black;
@@ -163,8 +167,10 @@ a {
 .restaurant-container{     
   display: flex;
   flex-direction: column;
-  margin: 75px 0px 80px 0px;
+  margin: 75px 0px 0px 0px;
   background-color: #F6F6F6;
+  gap: 10px;
+  
 
   .section-title{
     @include section-title;
@@ -175,7 +181,8 @@ a {
   .card-container{
     display: flex;
     flex-direction: column;
-    background-color: #F6F6F6;
+    margin-bottom: 70px;
+  
   }
 
   .card{
@@ -201,6 +208,8 @@ a {
     color: #008766;
     border: none;
     border-radius: 2px;
+    text-align: center;
+    padding: 8px;
   }
 
   img{
@@ -224,6 +233,7 @@ a {
     position: relative;
     height: 70px;
     gap: 5px;
+    margin-left: 5px;
   }
   
   .card-text{
@@ -234,7 +244,7 @@ a {
   .card-description i{
     position: absolute;
     top: 15px;
-    right: 40px;
+    right: 30px;
     font-size: 25px;
     color: #101010;
     
@@ -297,4 +307,29 @@ a {
 
   }
   
+}
+//*************************** Menu " La palette du goût " *******************
+
+
+
+.img-menu{
+
+
+  display: flex;
+
+  img{
+    background-size: cover;
+    height: 275px;
+  width: 100%;
+  }
+}
+.menu-container{
+  display: flex;
+  
+  background-color: #F6F6F6;
+  border-radius: 20px 20px 0px 0px;
+}
+.menu-title{
+  @include menu-title;
+  margin-left: 20px;
 }
