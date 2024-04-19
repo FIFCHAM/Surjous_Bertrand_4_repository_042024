@@ -309,7 +309,16 @@ a {
   
 }
 //*************************** Menu " La palette du goût " *******************
-
+.header{
+  position: relative;
+}
+.fa-arrow-left{
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  font-size: 25px;
+  color:$fond-black;
+}
 
 
 .img-menu{
@@ -324,12 +333,40 @@ a {
   }
 }
 .menu-container{
+  position: absolute;
   display: flex;
-  
+  flex-direction: column;
   background-color: #F6F6F6;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
+  width: 100%;
+.title{
+  display: flex;
+  margin-top: 25px;
+}
+.fa-heart{
+  position: absolute;
+  font-size: 25px;
+
+    right: 15px;
+    top: 30px
 }
 .menu-title{
   @include menu-title;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+.entree-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+
+}
+.entree-container h1{
+  @include menu-name;
+}
+.entree-container h2{
+  @include plat-name;
+}
+.entree-container p{
+  @include plat-description;
+}
 }
