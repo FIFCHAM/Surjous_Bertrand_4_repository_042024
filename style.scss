@@ -341,15 +341,17 @@ a {
   width: 100%;
 .title{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 .fa-heart{
-  position: absolute;
+  
   font-size: 25px;
+  margin-right: 10px;
 
-    right: 15px;
-    top: 30px
-}
+} 
 .menu-title{
   @include menu-title;
   margin-left: 10px;
@@ -358,15 +360,42 @@ a {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  gap: 5px;
 
 }
-.entree-container h1{
-  @include menu-name;
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  background: #FFFFFF;
+  
+  box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+  
+border-radius: 15px 15px 15px 15px;
 }
-.entree-container h2{
+.card{
+  margin-left: 10px;
+}
+.price{
+  margin-right: 10px;
+  @include price;
+}
+.card-titlemain{
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  @include menu-name;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.card-title{
   @include plat-name;
 }
-.entree-container p{
+.card-description{
   @include plat-description;
+}
+.card-button{
+  display: none;
 }
 }
