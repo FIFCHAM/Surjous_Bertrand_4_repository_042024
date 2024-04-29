@@ -430,9 +430,18 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 69px;
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+}
+.menu-container .card-container:active .price {
+  transform: translateX(0px);
+  transition: margin-left 0.4s;
+}
+.menu-container .card-container:active .card-button {
+  background-color: #99e2d0;
 }
 .menu-container .card {
   display: flex;
@@ -441,12 +450,34 @@ a {
   margin-left: 10px;
 }
 .menu-container .price {
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  gap: 5px;
   font-family: "Roboto";
   font-size: 15.04px;
   font-weight: 700;
   line-height: 17.63px;
   text-align: center;
+  transform: translateX(59px);
+  transition: all 0.4s;
+}
+.menu-container .price .card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 59px;
+  background-color: transparent;
+  border-radius: 0px 15px 15px 0px;
+}
+.menu-container .price p {
+  margin-right: 10px;
+}
+.menu-container .card-button i {
+  font-size: 20px;
+  color: #ffffff;
 }
 .menu-container .choix-title {
   border-bottom: 3px solid #99e2d0;
@@ -473,9 +504,6 @@ a {
   line-height: 17.63px;
   text-align: left;
 }
-.menu-container .card-button {
-  display: none;
-}
 .menu-container .commander-container {
   display: flex;
   flex-direction: column;
@@ -491,4 +519,13 @@ a {
   padding-left: 20px;
   gap: 15px;
   height: 35vh;
+}
+
+@keyframes price-animation {
+  0% {
+    translate: 0px;
+  }
+  100% {
+    translate: 59px;
+  }
 }/*# sourceMappingURL=style.css.map */
