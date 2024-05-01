@@ -28,6 +28,7 @@ a {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 15px 30px 0px 30px;
+  transition: all 0.5s ease-in;
 }
 
 .reservation-btn:hover {
@@ -45,6 +46,8 @@ a {
   border-radius: 25px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
   padding: 15px 30px 0px 30px;
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
 }
 
 .commander-btn {
@@ -63,24 +66,13 @@ a {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 15px 50px 0px 50px;
   margin: 10px;
+  transition: all 0.5s ease-in;
 }
 
 .commander-btn:hover {
-  height: 50px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  text-align: center;
-  border: none;
-  color: #ffffff;
-  border-radius: 25px;
-  padding: 15px 50px 0px 50px;
-  margin: 10px;
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
 }
 
 .main-container {
@@ -138,13 +130,13 @@ a {
   align-items: center;
   background-color: #f6f6f6;
 }
-.reservation .section-title {
+.reservation .reservation-title {
   font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
-  text-align: left;
-  margin: 40px 40px 15px;
+  text-align: center;
+  margin: 40px 50px 10px 50px;
   color: #101010;
 }
 .reservation p {
@@ -280,6 +272,30 @@ a {
   border-radius: 20px 20px 0px 0px;
   margin: 0;
 }
+.restaurant-container .card-heart {
+  display: flex;
+}
+.restaurant-container .card-heart .fa-full {
+  position: absolute;
+  font-size: 25px;
+  margin-right: 10px;
+  right: 10px;
+  color: transparent;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 2000ms ease;
+}
+.restaurant-container .card-heart:active .fa-solid {
+  opacity: 1;
+}
+.restaurant-container .card-heart .fa-empty {
+  position: absolute;
+  font-size: 25px;
+  margin-right: 10px;
+  right: 10px;
+}
 .restaurant-container .card-title {
   font-family: "Roboto";
   font-size: 18px;
@@ -405,20 +421,22 @@ a {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.menu-container .title.fa-solid {
+.menu-container .title .fa-full {
   position: absolute;
-  opacity: 0;
   font-size: 25px;
   margin-right: 10px;
   right: 10px;
+  color: transparent;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 2000ms ease;
 }
-.menu-container .title.fa-regular:hover {
-  color: #008766;
-}
-.menu-container .title.fa-regular:hover .fa-solid {
+.menu-container .title:active .fa-solid {
   opacity: 1;
 }
-.menu-container.fa-regular {
+.menu-container .title .fa-empty {
   position: absolute;
   font-size: 25px;
   margin-right: 10px;
@@ -452,7 +470,6 @@ a {
   overflow: hidden;
 }
 .menu-container .card-container:active .card-button {
-  transition: all 0.8s;
   width: 59px;
 }
 .menu-container .card-container:active .card {
@@ -497,12 +514,13 @@ a {
   width: 0px;
   background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
+  transition: all 0.8s;
 }
 .menu-container p {
   margin-right: 10px;
 }
 .menu-container .card-button i {
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
 }
 .menu-container .choix-title {
