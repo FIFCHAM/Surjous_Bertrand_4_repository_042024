@@ -405,9 +405,24 @@ a {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.menu-container .fa-heart {
+.menu-container .title.fa-solid {
+  position: absolute;
+  opacity: 0;
   font-size: 25px;
   margin-right: 10px;
+  right: 10px;
+}
+.menu-container .title.fa-regular:hover {
+  color: #008766;
+}
+.menu-container .title.fa-regular:hover .fa-solid {
+  opacity: 1;
+}
+.menu-container.fa-regular {
+  position: absolute;
+  font-size: 25px;
+  margin-right: 10px;
+  right: 10px;
 }
 .menu-container .menu-title {
   font-family: "Shrikhand";
@@ -430,18 +445,30 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 69px;
-  width: 100%;
   background: #ffffff;
+  width: 100%;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15px 15px 15px 15px;
   overflow: hidden;
 }
-.menu-container .card-container:active .price {
-  transform: translateX(0px);
-  transition: margin-left 0.4s;
-}
 .menu-container .card-container:active .card-button {
-  background-color: #99e2d0;
+  transition: all 0.8s;
+  width: 59px;
+}
+.menu-container .card-container:active .card {
+  width: 60%;
+}
+.menu-container .card-container:active .card-description {
+  width: 99%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-container .card-container:active .card-title {
+  width: 99%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-container .card {
   display: flex;
@@ -451,8 +478,6 @@ a {
 }
 .menu-container .price {
   display: flex;
-  align-items: center;
-  width: 100px;
   height: 100%;
   gap: 5px;
   font-family: "Roboto";
@@ -460,23 +485,24 @@ a {
   font-weight: 700;
   line-height: 17.63px;
   text-align: center;
-  transform: translateX(59px);
-  transition: all 0.4s;
 }
-.menu-container .price .card-button {
+.menu-container .price p {
+  margin-top: 40px;
+}
+.menu-container .card-button {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 59px;
-  background-color: transparent;
+  width: 0px;
+  background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
 }
-.menu-container .price p {
+.menu-container p {
   margin-right: 10px;
 }
 .menu-container .card-button i {
-  font-size: 20px;
+  font-size: 25px;
   color: #ffffff;
 }
 .menu-container .choix-title {

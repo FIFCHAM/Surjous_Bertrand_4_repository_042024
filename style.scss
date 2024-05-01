@@ -333,6 +333,7 @@ a {
     width: 100%;
   }
 }
+
 .menu-container {
   position: relative;
   bottom: 55px;
@@ -347,11 +348,34 @@ a {
     align-items: center;
     margin-top: 25px;
     margin-bottom: 25px;
+    
+    
+    &.fa-solid{
+      position: absolute;
+      opacity: 0;
+      font-size: 25px;
+      margin-right: 10px;
+      right: 10px; 
+    }
+    
+    &.fa-regular:hover {
+      .fa-solid{
+        opacity: 1;
+      }
+      color: #008766;
+    }
   }
-  .fa-heart {
+
+  &.fa-regular {
+  
+    position: absolute;
     font-size: 25px;
     margin-right: 10px;
+    right: 10px;
+    
   }
+
+
   .menu-title {
     @include menu-title;
     margin-left: 10px;
@@ -371,66 +395,69 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 69px;
-    width: 100%;
     background: #ffffff;
-
+width: 100%;
     box-shadow: 0px 4.01px 15.04px 0px #0000001a;
 
     border-radius: 15px 15px 15px 15px;
     overflow: hidden;
     &:active {
-      .price  {
-      
-        transform: translateX(0px);
-        transition: margin-left 0.4s ;
-       
-        
-        
-        
-      
-        
-       }
        .card-button{
-        background-color: $background-whitegreen;
+        transition: all 0.8s ;
+        width: 59px;
        }
-
+       .card{
+        width: 60%;
+       }
+       .card-description{
+         width: 99%;
+         overflow: hidden;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+        }
+        .card-title{
+          width: 99%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+       
     } 
-    }
   
   .card {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin-left: 10px;
+    
   }
   .price {
     display: flex;
-    align-items: center;
-    
-    width: 100px;
     height: 100%;
     gap: 5px;
     @include price;
-    transform: translateX(59px);
-    transition: all 0.4s;
-    
+  }
+  .price p{
+    margin-top: 40px;
+  }
     .card-button {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100%;
-      width: 59px;
-      background-color:transparent;
+      width: 0px;
+      background-color:$background-whitegreen;
       border-radius: 0px 15px 15px 0px;
        }
        p{
         margin-right: 10px;
        }
-  }
-  .card-button i{
-    font-size: 20px;
-    color: #ffffff;
-  }
+       .card-button i{
+        font-size: 25px;
+        color: #ffffff;
+      }
+  
   .choix-title {
     border-bottom: 3px solid #99e2d0;
     width: 40px;
@@ -441,9 +468,12 @@ a {
 
   .card-title {
     @include plat-name;
+    
+    
   }
   .card-description {
     @include plat-description;
+   
   }
   
   .commander-container {
