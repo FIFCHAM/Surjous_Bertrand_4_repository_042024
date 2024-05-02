@@ -167,7 +167,7 @@ a {
     margin-left: 10px;
     box-shadow: 0px 4px 15px 0px #00000026;
   }
-  .phone-group {
+  .icon-group {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,36 +253,7 @@ a {
     border-radius: 20px 20px 0px 0px;
     margin: 0;
   }
-  .card-heart{
-    
-    display: flex;
-    .fa-full{
-      position: absolute;
-      font-size: 25px;
-      margin-right: 10px;
-      right: 10px; 
-      color: transparent;
-      background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: all 2000ms ease;
-    }
-    &:active .fa-solid{
-      
-      opacity: 1;
-    }
-    
-    
-    
-    .fa-empty {
-      
-      position: absolute;
-      font-size: 25px;
-      margin-right: 10px;
-      right: 10px;
-    }
-  }  
+  
 
   
   .card-title {
@@ -299,6 +270,39 @@ a {
     height: 70px;
     gap: 5px;
     margin-left: 5px;
+    .card-heart{
+    
+      display: flex;
+      position: absolute;
+      margin-bottom: 15px;
+      align-items: center;
+      right: 5px;
+      color: $fond-black;
+      .fa-full{
+        position: absolute;
+        font-size: 25px;
+        margin-right: 10px;
+        right: 10px; 
+        color: transparent;
+        background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0;
+      transition: all 2000ms ease;
+      }
+      &:active .fa-solid{
+        
+        opacity: 1;
+      }
+      
+      .fa-empty {
+        
+        position: absolute;
+        font-size: 25px;
+        margin-right: 10px;
+        right: 10px;
+      }
+    }  
   }
 
   .card-text {
@@ -306,7 +310,7 @@ a {
     @include localité-text;
     color: $fond-black;
   }
-  .card-description i {
+  /*.card-description i {
     position: absolute;
     top: 15px;
     right: 30px;
@@ -318,7 +322,7 @@ a {
     top: 15px;
     right: 30px;
     font-size: 25px;
-  }
+  }*/
 }
 // ************************************** Footer *********************************************************
 .footer {
@@ -378,50 +382,50 @@ a {
 }
 
 .menu-container {
-  position: relative;
   bottom: 55px;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
   border-radius: 30px 30px 0px 0px;
   width: 100%;
   .title {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
     margin-bottom: 25px;
     
-    
-    .fa-full{
-      position: absolute;
-      font-size: 25px;
-      margin-right: 10px;
-      right: 10px; 
-      color: transparent;
-      background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: all 2000ms ease;
-    }
-    &:active .fa-solid{
+    .title-heart{
+      display: flex;
+      align-items: center;
+      position: relative;
+      right:-15px;
       
-      opacity: 1;
+      .fa-full{
+        position: absolute;
+        font-size: 25px;
+        right: 17px;
+        margin-right: 10px;
+        color: transparent;
+        background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 2000ms ease;
+      }
+      &:active .fa-solid{
+        opacity: 1;
+      }
+      .fa-empty {
+        position: absolute;
+        font-size: 25px;
+        margin-right: 10px;
+        right: 17px;
+      }
     }
-    
-    
-    
-    .fa-empty {
-      
-      position: absolute;
-      font-size: 25px;
-      margin-right: 10px;
-      right: 10px;
-    }
-  }  
-
-
+    } 
   .menu-title {
     @include menu-title;
     margin-left: 10px;

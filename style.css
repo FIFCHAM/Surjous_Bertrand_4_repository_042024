@@ -175,18 +175,18 @@ a {
   margin-left: 10px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
-.fonctionnement .phone-group {
+.fonctionnement .icon-group {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-inline-end: 20px;
   gap: 30px;
 }
-.fonctionnement .phone-group i {
+.fonctionnement .icon-group i {
   font-size: 20px;
   color: #7e7e7e;
 }
-.fonctionnement .phone-group p {
+.fonctionnement .icon-group p {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
@@ -194,7 +194,7 @@ a {
   text-align: left;
   color: #101010;
 }
-.fonctionnement .phone-group .fa-store {
+.fonctionnement .icon-group .fa-store {
   color: #9356dc;
 }
 .fonctionnement .number-radius {
@@ -221,6 +221,19 @@ a {
   flex-direction: column;
   margin: 75px 0px 0px 0px;
   background-color: #f6f6f6;
+  /*.card-description i {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 25px;
+    color: #101010;
+  }
+  .card-description i:hover {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 25px;
+  }*/
 }
 .restaurant-container .section-title {
   font-family: "Roboto";
@@ -272,30 +285,6 @@ a {
   border-radius: 20px 20px 0px 0px;
   margin: 0;
 }
-.restaurant-container .card-heart {
-  display: flex;
-}
-.restaurant-container .card-heart .fa-full {
-  position: absolute;
-  font-size: 25px;
-  margin-right: 10px;
-  right: 10px;
-  color: transparent;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 2000ms ease;
-}
-.restaurant-container .card-heart:active .fa-solid {
-  opacity: 1;
-}
-.restaurant-container .card-heart .fa-empty {
-  position: absolute;
-  font-size: 25px;
-  margin-right: 10px;
-  right: 10px;
-}
 .restaurant-container .card-title {
   font-family: "Roboto";
   font-size: 18px;
@@ -315,6 +304,35 @@ a {
   gap: 5px;
   margin-left: 5px;
 }
+.restaurant-container .card-description .card-heart {
+  display: flex;
+  position: absolute;
+  margin-bottom: 15px;
+  align-items: center;
+  right: 5px;
+  color: #101010;
+}
+.restaurant-container .card-description .card-heart .fa-full {
+  position: absolute;
+  font-size: 25px;
+  margin-right: 10px;
+  right: 10px;
+  color: transparent;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 2000ms ease;
+}
+.restaurant-container .card-description .card-heart:active .fa-solid {
+  opacity: 1;
+}
+.restaurant-container .card-description .card-heart .fa-empty {
+  position: absolute;
+  font-size: 25px;
+  margin-right: 10px;
+  right: 10px;
+}
 .restaurant-container .card-text {
   margin-left: 15px;
   font-family: "Roboto";
@@ -323,19 +341,6 @@ a {
   line-height: 19.92px;
   text-align: left;
   color: #101010;
-}
-.restaurant-container .card-description i {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  font-size: 25px;
-  color: #101010;
-}
-.restaurant-container .card-description i:hover {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  font-size: 25px;
 }
 
 .footer {
@@ -406,8 +411,8 @@ a {
 }
 
 .menu-container {
-  position: relative;
   bottom: 55px;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
@@ -415,17 +420,24 @@ a {
   width: 100%;
 }
 .menu-container .title {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.menu-container .title .fa-full {
+.menu-container .title .title-heart {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: -15px;
+}
+.menu-container .title .title-heart .fa-full {
   position: absolute;
   font-size: 25px;
+  right: 17px;
   margin-right: 10px;
-  right: 10px;
   color: transparent;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
@@ -433,18 +445,19 @@ a {
   opacity: 0;
   transition: all 2000ms ease;
 }
-.menu-container .title:active .fa-solid {
+.menu-container .title .title-heart:active .fa-solid {
   opacity: 1;
 }
-.menu-container .title .fa-empty {
+.menu-container .title .title-heart .fa-empty {
   position: absolute;
   font-size: 25px;
   margin-right: 10px;
-  right: 10px;
+  right: 17px;
 }
 .menu-container .menu-title {
   font-family: "Shrikhand";
   font-size: 28px;
+  font-style: italic;
   font-weight: 400;
   line-height: 40.82px;
   text-align: left;
