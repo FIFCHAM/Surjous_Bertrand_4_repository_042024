@@ -481,19 +481,19 @@ a {
   border-radius: 15px 15px 15px 15px;
   overflow: hidden;
 }
-.menu-container .card-container:hover .card-button {
+.menu-container .card-container:active .card-button {
   width: 59px;
 }
-.menu-container .card-container:hover .card {
+.menu-container .card-container:active .card {
   width: 60%;
 }
-.menu-container .card-container:hover .card-description {
+.menu-container .card-container:active .card-description {
   width: 99%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu-container .card-container:hover .card-title {
+.menu-container .card-container:active .card-title {
   width: 99%;
   overflow: hidden;
   white-space: nowrap;
