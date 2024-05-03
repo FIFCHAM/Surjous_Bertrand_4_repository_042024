@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-footer;
+    padding-left: 20px;
+    gap: 15px;
+    height: 25vh;
+  
+    .logo-footer {
+      margin-top: 20px;
+      @include logo-footer;
+      color: #ffffff;
+    }
+  
+    .link-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: #ffffff;
+    }
+    .footer-icon {
+      display: flex;
+      gap: 10px;
+      color: #ffffff;
+      @include icon-footer;
+    }
+    i {
+      width: 20px;
+    }
+    .text-footer {
+      @include text-footer;
+      color: #ffffff;
+    }
+  }

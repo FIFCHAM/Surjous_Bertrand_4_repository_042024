@@ -13,68 +13,6 @@ a {
   text-decoration: none;
 }
 
-.reservation-btn {
-  height: 50px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  text-align: center;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  border: none;
-  color: #ffffff;
-  border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  padding: 15px 30px 0px 30px;
-  transition: all 0.5s ease-in;
-}
-
-.reservation-btn:hover {
-  height: 50px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  text-align: center;
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
-  border: none;
-  color: #ffffff;
-  border-radius: 25px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
-  padding: 15px 30px 0px 30px;
-  opacity: 0.8;
-  transition: all 0.5s ease-out;
-}
-
-.commander-btn {
-  height: 50px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  text-align: center;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  border: none;
-  color: #ffffff;
-  border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  padding: 15px 50px 0px 50px;
-  margin: 10px;
-  transition: all 0.5s ease-in;
-}
-
-.commander-btn:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
-  opacity: 0.8;
-  transition: all 0.5s ease-out;
-}
-
 .main-container {
   height: 0;
   margin: 0;
@@ -146,6 +84,43 @@ a {
   font-weight: 300;
   line-height: 21.09px;
   text-align: center;
+}
+
+.reservation-btn {
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  border: none;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 15px 30px 0px 30px;
+  transition: all 0.5s ease-in;
+}
+
+.reservation-btn:hover {
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  border: none;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  padding: 15px 30px 0px 30px;
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
 }
 
 .fonctionnement {
@@ -221,19 +196,6 @@ a {
   flex-direction: column;
   margin: 75px 0px 0px 0px;
   background-color: #f6f6f6;
-  /*.card-description i {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    font-size: 25px;
-    color: #101010;
-  }
-  .card-description i:hover {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    font-size: 25px;
-  }*/
 }
 .restaurant-container .section-title {
   font-family: "Roboto";
@@ -351,7 +313,7 @@ a {
   background-color: #353535;
   padding-left: 20px;
   gap: 15px;
-  height: 35vh;
+  height: 25vh;
 }
 .footer .logo-footer {
   margin-top: 20px;
@@ -391,10 +353,6 @@ a {
   color: #ffffff;
 }
 
-.header {
-  position: relative;
-}
-
 .fa-arrow-left {
   position: absolute;
   top: 25%;
@@ -407,13 +365,14 @@ a {
   display: flex;
 }
 .img-menu img {
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 275px;
   width: 100%;
 }
 
 .menu-container {
-  bottom: 55px;
+  bottom: 45px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -566,22 +525,26 @@ a {
   align-items: center;
   margin-top: 25px;
 }
-.menu-container .footer-card {
-  position: relative;
-  bottom: 55px;
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  padding-left: 20px;
-  gap: 15px;
-  height: 35vh;
+.menu-container .commander-btn {
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  border: none;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 15px 50px 0px 50px;
+  margin: 10px;
+  transition: all 0.5s ease-in;
 }
-
-@keyframes price-animation {
-  0% {
-    translate: 0px;
-  }
-  100% {
-    translate: 59px;
-  }
+.menu-container .commander-btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
 }/*# sourceMappingURL=style.css.map */
