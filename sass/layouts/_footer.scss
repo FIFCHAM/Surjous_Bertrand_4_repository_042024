@@ -4,12 +4,28 @@
     background-color: $background-footer;
     padding-left: 20px;
     gap: 15px;
-    height: 25vh;
+    height: 34vh;
+    @media (min-width:1024px){
+      flex-direction: row;
+      align-items: center;
+      height: 80px;
+      position: relative;
+     
+      }
+    
   
     .logo-footer {
       margin-top: 20px;
       @include logo-footer;
       color: #ffffff;
+      @media (min-width:1024px){
+        margin-top: 0;
+        position: absolute;
+        right: 10px;
+        bottom: 33%;
+       
+        }
+     
     }
   
     .link-footer {
@@ -17,6 +33,12 @@
       flex-direction: column;
       gap: 10px;
       color: #ffffff;
+      @media (min-width:1024px){
+        flex-direction: row;
+        
+        
+       
+        }
     }
     .footer-icon {
       display: flex;

@@ -57,7 +57,7 @@ a {
 @import "components/button-reservation-btn";
 
 //************************************* Fonctionnement ***********************************
-.fonctionnement {
+.functionning {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -68,7 +68,7 @@ a {
     color: $fond-black;
     
   }
-  .choisissez {
+  .choose {
     position: relative;
     display: flex;
     justify-content: center;
@@ -233,6 +233,14 @@ a {
   background-color: #f6f6f6;
   border-radius: 30px 30px 0px 0px;
   width: 100%;
+  @media (min-width:768px) {
+    margin-left: 150px;
+    margin-right: 150px;
+    width: auto;
+    
+  } 
+    
+  
   .title {
     position: relative;
     display: flex;
@@ -240,14 +248,19 @@ a {
     align-items: center;
     margin-top: 25px;
     margin-bottom: 25px;
+    @media  (min-width:768px){
+      justify-content: space-evenly;
+      
+    }
     
     @import "components/animation-title-heart";
     } 
   .menu-title {
     @include menu-title;
     margin-left: 10px;
+    
   }
-  .choix-container {
+  .choose-container {
     display: flex;
     flex-direction: column;
   
@@ -255,6 +268,10 @@ a {
     margin-right: 13px;
     gap: 12px;
     margin-bottom: 30px;
+    @media (min-width:1440px){
+      margin-left: 200px;
+      margin-right: 200px;
+    }
   }
   
   .card-container {
@@ -325,7 +342,7 @@ width: 100%;
         color: #ffffff;
       }
   
-  .choix-title {
+  .choose-title {
     border-bottom: 3px solid #99e2d0;
     width: 40px;
     @include menu-name;

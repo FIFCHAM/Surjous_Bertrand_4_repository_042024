@@ -123,14 +123,14 @@ a {
   transition: all 0.5s ease-out;
 }
 
-.fonctionnement {
+.functionning {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 50px 20px 50px 20px;
   gap: 24.92px;
 }
-.fonctionnement .section-title {
+.functionning .section-title {
   font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
@@ -138,7 +138,7 @@ a {
   text-align: left;
   color: #101010;
 }
-.fonctionnement .choisissez {
+.functionning .choose {
   position: relative;
   display: flex;
   justify-content: center;
@@ -150,18 +150,18 @@ a {
   margin-left: 10px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
-.fonctionnement .icon-group {
+.functionning .icon-group {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-inline-end: 20px;
   gap: 30px;
 }
-.fonctionnement .icon-group i {
+.functionning .icon-group i {
   font-size: 20px;
   color: #7e7e7e;
 }
-.fonctionnement .icon-group p {
+.functionning .icon-group p {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
@@ -169,10 +169,10 @@ a {
   text-align: left;
   color: #101010;
 }
-.fonctionnement .icon-group .fa-store {
+.functionning .icon-group .fa-store {
   color: #9356dc;
 }
-.fonctionnement .number-radius {
+.functionning .number-radius {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -313,7 +313,15 @@ a {
   background-color: #353535;
   padding-left: 20px;
   gap: 15px;
-  height: 25vh;
+  height: 34vh;
+}
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    position: relative;
+  }
 }
 .footer .logo-footer {
   margin-top: 20px;
@@ -325,11 +333,24 @@ a {
   text-align: left;
   color: #ffffff;
 }
+@media (min-width: 1024px) {
+  .footer .logo-footer {
+    margin-top: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 33%;
+  }
+}
 .footer .link-footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
   color: #ffffff;
+}
+@media (min-width: 1024px) {
+  .footer .link-footer {
+    flex-direction: row;
+  }
 }
 .footer .footer-icon {
   display: flex;
@@ -380,6 +401,13 @@ a {
   border-radius: 30px 30px 0px 0px;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .menu-container {
+    margin-left: 150px;
+    margin-right: 150px;
+    width: auto;
+  }
+}
 .menu-container .title {
   position: relative;
   display: flex;
@@ -387,6 +415,11 @@ a {
   align-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .menu-container .title {
+    justify-content: space-evenly;
+  }
 }
 .menu-container .title .title-heart {
   display: flex;
@@ -421,13 +454,19 @@ a {
   text-align: left;
   margin-left: 10px;
 }
-.menu-container .choix-container {
+.menu-container .choose-container {
   display: flex;
   flex-direction: column;
   margin-left: 13px;
   margin-right: 13px;
   gap: 12px;
   margin-bottom: 30px;
+}
+@media (min-width: 1440px) {
+  .menu-container .choose-container {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }
 .menu-container .card-container {
   display: flex;
@@ -494,7 +533,7 @@ a {
   font-size: 20px;
   color: #ffffff;
 }
-.menu-container .choix-title {
+.menu-container .choose-title {
   border-bottom: 3px solid #99e2d0;
   width: 40px;
   font-family: "Roboto";
