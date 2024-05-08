@@ -20,11 +20,14 @@ a {
 }
 
 .home-loader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
-  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -33,20 +36,16 @@ a {
   animation-fill-mode: both;
 }
 .home-loader h1 {
-  position: fixed;
   font-family: "shrikhand";
-  font-size: 60px;
-  right: 36%;
-  top: 45%;
-  padding-bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+  animation: rotate-omyfood 3s ease-in-out;
+  animation-fill-mode: both;
 }
-.home-loader .loader {
+
+.loader {
   width: 48px;
   height: 48px;
-  position: fixed;
-  top: 60%;
-  right: 50%;
-  left: 50%;
   border: 5px solid #FFF;
   border-bottom-color: #FF3D00;
   border-radius: 50%;
@@ -57,12 +56,14 @@ a {
 
 @keyframes home-loader {
   0% {
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.8);
-    display: block;
+    visibility: visible;
   }
   100% {
     background-color: rgba(0, 0, 0, 0);
     display: none;
+    z-index: 0;
   }
 }
 @keyframes rotation {
@@ -71,6 +72,14 @@ a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes rotate-omyfood {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
   }
 }
 .home-header {
@@ -86,7 +95,7 @@ a {
   align-items: center;
   height: 63px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .home-header .header-title {
     height: 96.34px;
   }
@@ -189,7 +198,7 @@ a {
   margin: 50px 20px 50px 20px;
   gap: 30px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .functionning {
     margin: 50px 180px 50px 180px;
   }
@@ -210,7 +219,7 @@ a {
   align-items: flex-start;
   gap: 24.92px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .functionning-choose {
     flex-direction: row;
   }
@@ -239,7 +248,7 @@ a {
   margin-inline-end: 20px;
   gap: 30px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .functionning-choose .icon-group {
     width: 70%;
   }
@@ -298,7 +307,7 @@ a {
   margin-top: 50px;
   margin-left: 20px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .restaurant-container .section-title {
     margin-left: 180px;
     margin-top: 30px;
@@ -310,7 +319,7 @@ a {
   flex-direction: column;
   margin-bottom: 70px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .restaurant-container .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -336,7 +345,7 @@ a {
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .restaurant-container .card {
     margin: 0;
   }
@@ -410,8 +419,13 @@ a {
   opacity: 0;
   transition: all 2000ms ease;
 }
-.restaurant-container .card-description .card-heart:hover .fa-solid {
+.restaurant-container .card-description .card-heart:active .fa-solid {
   opacity: 1;
+}
+@media screen and (min-width: 1400px) {
+  .restaurant-container .card-description .card-heart:hover .fa-solid {
+    opacity: 1;
+  }
 }
 .restaurant-container .card-description .card-heart .fa-empty {
   position: absolute;
@@ -435,9 +449,9 @@ a {
   background-color: #353535;
   padding-left: 20px;
   gap: 15px;
-  height: 35vh;
+  height: 200px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
   .home-footer {
     flex-direction: row;
     align-items: flex-end;
@@ -468,7 +482,7 @@ a {
   text-align: left;
   color: #ffffff;
 }
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
   .home-footer .logo-footer {
     margin-top: 0;
     position: absolute;
@@ -491,7 +505,7 @@ a {
   gap: 10px;
   color: #ffffff;
 }
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
   .home-footer .link-footer {
     flex-direction: row;
     margin-right: 25px;
@@ -532,7 +546,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .restaurant-header {
     height: 96.34px;
   }
@@ -569,7 +583,7 @@ a {
   height: 275px;
   width: 100%;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .img-menu img {
     height: 383px;
   }
@@ -620,6 +634,9 @@ a {
   opacity: 0;
   transition: all 2000ms ease;
 }
+.menu-container .title .title-heart:active .fa-solid {
+  opacity: 1;
+}
 .menu-container .title .title-heart:hover .fa-solid {
   opacity: 1;
 }
@@ -645,7 +662,7 @@ a {
   gap: 12px;
   margin-bottom: 30px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
   .menu-container .choose-container {
     margin-left: 210px;
     margin-right: 210px;
@@ -680,7 +697,7 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .menu-container .card-container:hover .card-button {
     width: 59px;
   }
@@ -747,10 +764,28 @@ a {
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
+.menu-container .choose-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+  margin-right: 13px;
+  gap: 12px;
+  margin-bottom: 30px;
+  animation: choose-title 3s ease-in-out;
+}
+@keyframes choose-title {
+  0% {
+    translate: 0px -200%;
+  }
+  50% {
+    translate: 0 -200%;
+    scale: 1.1;
+  }
+}
 .menu-container .card-title {
   font-family: "Roboto";
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 21.09px;
   text-align: left;
 }
@@ -797,9 +832,9 @@ a {
   background-color: #353535;
   padding-left: 20px;
   gap: 15px;
-  height: 35vh;
+  height: 200px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
   .restaurant-footer {
     flex-direction: row;
     align-items: flex-end;
@@ -822,7 +857,7 @@ a {
   text-align: left;
   color: #ffffff;
 }
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
   .restaurant-footer .logo-footer {
     margin-top: 0;
     position: absolute;
@@ -836,7 +871,7 @@ a {
   gap: 10px;
   color: #ffffff;
 }
-@media (min-width: 1025px) {
+@media (min-width: 1300px) {
   .restaurant-footer .link-footer {
     flex-direction: row;
     margin-right: 25px;

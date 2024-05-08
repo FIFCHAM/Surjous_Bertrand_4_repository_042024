@@ -1,0 +1,22 @@
+.choose-container {
+    display: flex;
+    flex-direction: column;
+  
+    margin-left: 13px;
+    margin-right: 13px;
+    gap: 12px;
+    margin-bottom: 30px;
+    animation: choose-title 3s ease-in-out;
+    
+  }
+
+  @keyframes choose-title{
+    
+   0%{translate: 0px -200%;}
+
+    50%{
+        translate: 0 -200% ;
+        scale : 1.1;
+        //transform: skew( 180deg);
+    }
+} 

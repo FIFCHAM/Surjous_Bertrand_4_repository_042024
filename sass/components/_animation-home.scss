@@ -1,9 +1,14 @@
 .home-loader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
-    z-index: 2;
+   // z-index: 2;
     top: 0;
     left: 0;
     right:0;
@@ -12,45 +17,34 @@
     animation-fill-mode: both;
     
     & h1 {
-        position: fixed;
         font-family: "shrikhand";
-        font-size: 60px;
-        right: 36%;
+        font-size: 50px;
+        text-align: center;
+        animation: rotate-omyfood 3s ease-in-out;
+        animation-fill-mode: both;
         
-        top: 45%;
-        padding-bottom: 20px;
       }
+    }
       .loader {
         width: 48px;
         height: 48px;
-        position: fixed;
-        top:60%;
-        right: 50%;
-        left: 50%;
-        
-        
         border: 5px solid #FFF;
         border-bottom-color: #FF3D00;
         border-radius: 50%;
         display: inline-block;
         box-sizing: border-box;
         animation: rotation 1s linear infinite;
-      }
-}
+      };
 @keyframes home-loader{
     0% {
+      z-index: 2;
         background-color: rgba(0, 0, 0, 0.8);
-        display: block;
+        visibility: visible;
       }
-      50%{
-    
-
-            
-      }
-    
       100% {
         background-color: rgba(0, 0, 0, 0);
         display: none;
+        z-index: 0;
       }
     }
         
@@ -62,5 +56,13 @@
                 transform: rotate(360deg);
             }
         } 
-        
+        @keyframes rotate-omyfood {
+          0% {
+            rotate: 0deg;
+          }
+          100%{
+            rotate: 360deg;
+          }
+          
+        }
     
