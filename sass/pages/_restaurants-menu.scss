@@ -1,0 +1,223 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+//***************************  Restaurants *******************************
+
+//************************* Header *************************************
+@import "../layouts/restaurant-header";
+
+.fa-arrow-left {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    font-size: 25px;
+    color: $fond-black;
+}
+
+.img-menu {
+    display: flex;
+
+    img {
+        object-fit: cover;
+        height: 275px;
+        width: 100%;
+
+        @media screen and (min-width:1400px) {
+            height: 383px;
+        }
+
+
+    }
+}
+
+// *********************** Main container ******************************
+.menu-container {
+    bottom: 45px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0px 0px;
+    width: 100%;
+
+    @media (min-width:768px) {
+        margin-left: 150px;
+        margin-right: 150px;
+        width: auto;
+
+    }
+
+
+    .title {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        gap: 35px;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        @media (min-width:768px) {
+            justify-content: center;
+            gap: 70px;
+
+        }
+
+        @import "../components/animation-title-heart";
+    }
+
+    .menu-title {
+        @include menu-title;
+        margin-left: 10px;
+
+    }
+
+    .choose-container {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 13px;
+        margin-right: 13px;
+        gap: 12px;
+        margin-bottom: 30px;
+
+        @media (min-width:1400px) {
+            margin-left: 210px;
+            margin-right: 210px;
+        }
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 69px;
+        background: #ffffff;
+        width: 100%;
+        box-shadow: 0px 4.01px 15.04px 0px #0000001a;
+
+        border-radius: 15px 15px 15px 15px;
+        overflow: hidden;
+
+        &:active {
+            .card-button {
+                width: 59px;
+            }
+
+            .card {
+                width: 60%;
+            }
+
+            .card-description {
+                width: 99%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .card-title {
+                width: 99%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        @media screen and (min-width:1400px) {
+            &:hover {
+                .card-button {
+                    width: 59px;
+                }
+
+                .card {
+                    width: 60%;
+                }
+
+                .card-description {
+                    width: 99%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                .card-title {
+                    width: 99%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+            }
+
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 10px;
+
+    }
+
+    .price {
+        display: flex;
+        height: 100%;
+        gap: 15px;
+        @include price;
+    }
+
+    .price p {
+        margin-top: 40px;
+    }
+
+    .card-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 0px;
+        background-color: $background-whitegreen;
+        border-radius: 0px 15px 15px 0px;
+        transition: all 0.8s;
+    }
+
+    .card-button i {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .choose-title {
+        border-bottom: 3px solid #99e2d0;
+        width: 40px;
+        @include menu-name;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+    @import "../components/animation-menu";
+
+    .card-title {
+        @include plat-name;
+
+
+    }
+
+    .card-description {
+        @include plat-description;
+
+    }
+
+    //************************* button order *******************************
+    .commander-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    @import "../components/button-order-btn";
+
+}
+
+//***************************** restaurant-footer ********************************
+@import "../layouts/restaurant-footer";

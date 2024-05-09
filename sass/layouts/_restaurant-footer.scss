@@ -1,62 +1,69 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.restaurant-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-footer;
+  padding-left: 20px;
+  gap: 15px;
+  height: 200px;
+
+  @media (min-width:1400px) {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    height: 114px;
+    width: 127%;
+    margin-left: -151px;
+    position: relative;
+    padding-bottom: 30px;
+    padding-left: 290px;
+
+  }
 
 
-  .restaurant-footer {
+
+  .logo-footer {
+    margin-top: 20px;
+    @include logo-footer;
+    color: #ffffff;
+
+    @media (min-width:1400px) {
+      margin-top: 0;
+      position: absolute;
+      right: 60px;
+      bottom: 30px;
+    }
+
+  }
+
+  .link-footer {
     display: flex;
     flex-direction: column;
-    background-color: $background-footer;
-    padding-left: 20px;
-    gap: 15px;
-    height: 200px;
-    @media (min-width:1400px){
+    gap: 10px;
+    color: #ffffff;
+
+    @media (min-width:1300px) {
       flex-direction: row;
-      align-items:flex-end;
-      justify-content: center;
-      height: 114px;
-      width: 127%;
-        margin-left: -151px;
-      position: relative;
-      padding-bottom: 30px;
-      padding-left: 290px;
-     
-      }
-     
-    
-  
-    .logo-footer {
-      margin-top: 20px;
-      @include logo-footer;
-      color: #ffffff;
-      @media (min-width:1400px){
-        margin-top: 0;
-        position: absolute;
-        right: 60px;
-        bottom: 30px;
-        }
-       
+      margin-right: 25px;
     }
-  
-    .link-footer {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      color: #ffffff;
-      @media (min-width:1300px){
-        flex-direction: row;
-        margin-right: 25px;
-        }
-       
-    }
-    .footer-icon {
-      display: flex;
-      gap: 10px;
-      color: #ffffff;
-      @include icon-footer;
-    }
-    i {
-      width: 20px;
-    }
-    .text-footer {
-      @include text-footer;
-      color: #ffffff;
-    }
+
   }
+
+  .footer-icon {
+    display: flex;
+    gap: 10px;
+    color: #ffffff;
+    @include icon-footer;
+  }
+
+  i {
+    width: 20px;
+  }
+
+  .text-footer {
+    @include text-footer;
+    color: #ffffff;
+  }
+}
