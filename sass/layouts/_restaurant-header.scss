@@ -17,7 +17,7 @@
     @include header-flex-title;
   }
 
-  .header-title p {
+  .header-title h1 {
     @include ohmyfood-mobile;
     color: $fond-black;
   }

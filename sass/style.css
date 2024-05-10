@@ -14,6 +14,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -42,14 +43,12 @@
 
 @keyframes home-loader {
   0% {
-    z-index: 2;
     background-color: rgba(0, 0, 0, 0.8);
-    visibility: visible;
+    opacity: 1;
   }
   100% {
     background-color: rgba(0, 0, 0, 0);
     display: none;
-    z-index: 0;
   }
 }
 @keyframes rotation {
@@ -62,10 +61,10 @@
 }
 @keyframes rotate-omyfood {
   0% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   100% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 .home-header {
@@ -86,12 +85,7 @@
     height: 96.34px;
   }
 }
-.home-header .header-title p {
-  font-family: "shrikhand";
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 43.74px;
-  text-align: center;
+.home-header .header-title {
   color: #101010;
 }
 .home-header .location-container {
@@ -549,7 +543,7 @@
   align-items: center;
   height: 63px;
 }
-.restaurant-header .header-title p {
+.restaurant-header .header-title h1 {
   font-family: "shrikhand";
   font-size: 30px;
   font-weight: 400;
@@ -755,22 +749,70 @@
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
-.menu-container .choose-container {
+.menu-container #choose-container-1 {
   display: flex;
   flex-direction: column;
   margin-left: 13px;
   margin-right: 13px;
   gap: 12px;
   margin-bottom: 30px;
-  animation: choose-title 3s ease-in-out;
+  animation: choose-1 3s ease-in-out;
+  animation-fill-mode: backwards;
 }
-@keyframes choose-title {
+.menu-container #choose-container-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+  margin-right: 13px;
+  gap: 12px;
+  margin-bottom: 30px;
+  animation: choose-2 4s ease-in-out;
+  animation-fill-mode: backwards;
+}
+.menu-container #choose-container-3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+  margin-right: 13px;
+  gap: 12px;
+  margin-bottom: 30px;
+  animation: choose-3 5s ease-in-out;
+  animation-fill-mode: backwards;
+}
+@keyframes choose-1 {
   0% {
-    translate: 0px -200%;
+    translate: 0px 0px;
   }
   50% {
-    translate: 0 -200%;
-    scale: 1.1;
+    translate: 0px -200%;
+  }
+  100% {
+    translate: 0px 0%;
+    scale: 0.8;
+  }
+}
+@keyframes choose-2 {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -300%;
+  }
+  100% {
+    translate: 0px 0%;
+    scale: 0.9;
+  }
+}
+@keyframes choose-3 {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -250%;
+  }
+  100% {
+    translate: 0px 0px;
+    scale: 1;
   }
 }
 .menu-container .card-title {
@@ -899,6 +941,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -927,14 +970,12 @@
 
 @keyframes home-loader {
   0% {
-    z-index: 2;
     background-color: rgba(0, 0, 0, 0.8);
-    visibility: visible;
+    opacity: 1;
   }
   100% {
     background-color: rgba(0, 0, 0, 0);
     display: none;
-    z-index: 0;
   }
 }
 @keyframes rotation {
@@ -947,10 +988,10 @@
 }
 @keyframes rotate-omyfood {
   0% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   100% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 .card-heart {
@@ -1043,12 +1084,7 @@
     height: 96.34px;
   }
 }
-.home-header .header-title p {
-  font-family: "shrikhand";
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 43.74px;
-  text-align: center;
+.home-header .header-title {
   color: #101010;
 }
 .home-header .location-container {

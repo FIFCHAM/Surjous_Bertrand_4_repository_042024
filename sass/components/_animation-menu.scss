@@ -1,4 +1,4 @@
-.choose-container {
+#choose-container-1 {
     display: flex;
     flex-direction: column;
 
@@ -6,19 +6,89 @@
     margin-right: 13px;
     gap: 12px;
     margin-bottom: 30px;
-    animation: choose-title 3s ease-in-out;
+    animation: choose-1 3s ease-in-out;
+    animation-fill-mode: backwards;
+     
+
+}
+#choose-container-2 {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 13px;
+    margin-right: 13px;
+    gap: 12px;
+    margin-bottom: 30px;
+    animation: choose-2 4s ease-in-out;
+    animation-fill-mode: backwards;
+     
+}
+#choose-container-3 {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 13px;
+    margin-right: 13px;
+    gap: 12px;
+    margin-bottom: 30px;
+    animation: choose-3 5s ease-in-out;
+    animation-fill-mode: backwards;
+     
 
 }
 
-@keyframes choose-title {
+
+
+
+
+@keyframes choose-1 {
 
     0% {
+        translate: 0px 0px;
+    }
+    50%{
         translate: 0px -200%;
     }
+    
 
-    50% {
-        translate: 0 -200%;
-        scale: 1.1;
+    100% {
+        translate: 0px 0%;
+        scale: 0.8;
         //transform: skew( 180deg);
     }
 }
+
+@keyframes choose-2 {
+
+    0% {
+        translate: 0px 0px;
+    }
+    50%{
+        translate: 0px -300%;
+    }
+    
+
+    100% {
+        translate: 0px 0%;
+        scale:0.9;
+        //transform: skew( 180deg);
+    }
+}
+
+@keyframes choose-3 {
+
+    0% {
+        translate: 0px 0px;
+    }
+    50%{
+        translate: 0px -250%;
+    }
+    
+
+    100% {
+        translate: 0px 0px;
+        scale: 1;
+        //transform: skew( 180deg);
+    }
+}
+
