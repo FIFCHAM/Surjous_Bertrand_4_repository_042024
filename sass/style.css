@@ -111,9 +111,8 @@
 }
 
 .main-container {
-  height: 0;
+  height: 100%;
   margin: 0;
-  background-color: #ffffff;
 }
 
 .reservation {
@@ -527,6 +526,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
 }
 @media screen and (min-width: 1400px) {
   .restaurant-header {
@@ -558,6 +558,9 @@
 
 .img-menu {
   display: flex;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -40px;
 }
 .img-menu img {
   -o-object-fit: cover;
@@ -572,9 +575,9 @@
 }
 
 .menu-container {
-  bottom: 45px;
   position: relative;
   display: flex;
+  z-index: 2;
   flex-direction: column;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
@@ -646,12 +649,6 @@
   gap: 12px;
   margin-bottom: 30px;
 }
-@media (min-width: 1400px) {
-  .menu-container .choose-container {
-    margin-left: 210px;
-    margin-right: 210px;
-  }
-}
 .menu-container .card-container {
   display: flex;
   justify-content: space-between;
@@ -662,6 +659,7 @@
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15px 15px 15px 15px;
   overflow: hidden;
+  cursor: pointer;
 }
 .menu-container .card-container:active .card-button {
   width: 59px;
@@ -743,7 +741,6 @@
   line-height: 18.75px;
   text-align: left;
   padding-bottom: 5px;
-  margin-bottom: 5px;
 }
 .menu-container #choose-container-1 {
   display: flex;
@@ -755,6 +752,12 @@
   animation: choose-1 3s ease-in-out;
   animation-fill-mode: backwards;
 }
+@media (min-width: 1400px) {
+  .menu-container #choose-container-1 {
+    margin-left: 210px;
+    margin-right: 210px;
+  }
+}
 .menu-container #choose-container-2 {
   display: flex;
   flex-direction: column;
@@ -764,6 +767,12 @@
   margin-bottom: 30px;
   animation: choose-2 4s ease-in-out;
   animation-fill-mode: backwards;
+}
+@media (min-width: 1400px) {
+  .menu-container #choose-container-2 {
+    margin-left: 210px;
+    margin-right: 210px;
+  }
 }
 .menu-container #choose-container-3 {
   display: flex;
@@ -775,40 +784,55 @@
   animation: choose-3 5s ease-in-out;
   animation-fill-mode: backwards;
 }
+@media (min-width: 1400px) {
+  .menu-container #choose-container-3 {
+    margin-left: 210px;
+    margin-right: 210px;
+  }
+}
 @keyframes choose-1 {
   0% {
-    translate: 0px 0px;
+    transform: translate(0px, 0px);
+    opacity: 0;
   }
   50% {
-    translate: 0px -200%;
+    transform: translate(0px, -200%);
+    opacity: 0.5;
   }
   100% {
-    translate: 0px 0%;
+    transform: translate(0px, 0%);
     scale: 0.8;
+    opacity: 1;
   }
 }
 @keyframes choose-2 {
   0% {
-    translate: 0px 0px;
+    transform: translate(0px, 0px);
+    opacity: 0;
   }
   50% {
-    translate: 0px -300%;
+    transform: translate(0px, -300%);
+    opacity: 0.5;
   }
   100% {
-    translate: 0px 0%;
+    transform: translate(0px, 0%);
     scale: 0.9;
+    opacity: 1;
   }
 }
 @keyframes choose-3 {
   0% {
-    translate: 0px 0px;
+    transform: translate(0px, 0px);
+    opacity: 0;
   }
   50% {
-    translate: 0px -250%;
+    transform: translate(0px, -250%);
+    opacity: 0.5;
   }
   100% {
-    translate: 0px 0px;
+    transform: translate(0px, 0px);
     scale: 1;
+    opacity: 1;
   }
 }
 .menu-container .card-title {
@@ -829,7 +853,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25px;
+  margin-bottom: 30px;
 }
 .menu-container .commander-btn {
   height: 50px;
