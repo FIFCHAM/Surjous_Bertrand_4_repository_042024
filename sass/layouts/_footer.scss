@@ -28,11 +28,11 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-right: 25px;
         
       }
-    & h3 {
+    & h2 {
       margin-top: 22px;
       @include logo-footer;
       color: #ffffff;

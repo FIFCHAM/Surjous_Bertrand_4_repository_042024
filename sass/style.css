@@ -22,10 +22,7 @@
   animation: home-loader 3s ease-in-out;
   animation-fill-mode: both;
 }
-.home-loader h1 {
-  font-family: "shrikhand";
-  font-size: 50px;
-  text-align: center;
+.home-loader img {
   animation: rotate-omyfood 3s ease-in-out;
   animation-fill-mode: both;
 }
@@ -454,11 +451,11 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 25px;
   }
 }
-.footer .logo-footer h3 {
+.footer .logo-footer h2 {
   margin-top: 22px;
   font-family: "Shrikhand";
   font-size: 18px;
@@ -905,11 +902,11 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 25px;
   }
 }
-.footer .logo-footer h3 {
+.footer .logo-footer h2 {
   margin-top: 22px;
   font-family: "Shrikhand";
   font-size: 18px;
@@ -988,10 +985,7 @@
   animation: home-loader 3s ease-in-out;
   animation-fill-mode: both;
 }
-.home-loader h1 {
-  font-family: "shrikhand";
-  font-size: 50px;
-  text-align: center;
+.home-loader img {
   animation: rotate-omyfood 3s ease-in-out;
   animation-fill-mode: both;
 }
@@ -1174,11 +1168,11 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 25px;
   }
 }
-.footer .logo-footer h3 {
+.footer .logo-footer h2 {
   margin-top: 22px;
   font-family: "Shrikhand";
   font-size: 18px;
