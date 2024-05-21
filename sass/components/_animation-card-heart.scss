@@ -1,7 +1,6 @@
 @import "../utils/variables";
 
 .card-heart {
-
   display: flex;
   position: absolute;
   margin-bottom: 15px;
@@ -23,20 +22,17 @@
   }
 
   &:active .fa-solid {
-
     opacity: 1;
   }
 
   @media screen and (min-width:1400px) {
     &:hover .fa-solid {
-
       opacity: 1;
     }
 
   }
 
   .fa-empty {
-
     position: absolute;
     font-size: 25px;
     margin-right: 10px;

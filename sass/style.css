@@ -45,7 +45,7 @@
   }
   100% {
     background-color: rgba(0, 0, 0, 0);
-    display: none;
+    visibility: hidden;
   }
 }
 @keyframes rotation {
@@ -1008,7 +1008,7 @@
   }
   100% {
     background-color: rgba(0, 0, 0, 0);
-    display: none;
+    visibility: hidden;
   }
 }
 @keyframes rotation {
